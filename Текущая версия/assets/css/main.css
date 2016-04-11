@@ -1,5 +1,5 @@
-/* Header */
-#head { background:#c73119 url( ../images/bg_header.jpg) no-repeat; background-size: cover; min-height:595px; text-align: center; padding-top:240px; color:white; font-family:"Open sans", Helvetica, Arial; font-weight:300; }
+/* Header 240px*/
+#head { background:#c73119 url( ../images/bg_header.jpg) no-repeat; background-size: cover; min-height:643px; text-align: center; padding-top:240px; color:white; font-family:"Open sans", Helvetica, Arial; font-weight:300; }
 #head.secondary { height:100px; min-height: 100px; padding-top:0px; }
 	#head .lead { font-family:"Open sans", Helvetica, Arial; font-size:44px; margin-bottom:6px; color:white; line-height:1.15em; } 
 	#head .tagline { color:rgba(255,255,255,0.75); margin-bottom:25px; }
@@ -12,10 +12,10 @@
 		#head .btn-default.active { color:#fff; -webkit-box-shadow:inset 0px 0px 0px 3px #fff; -moz-box-shadow:inset 0px 0px 0px 3px #fff; box-shadow:inset 0px 0px 0px 3px #fff; background: transparent; }
 
 @media (max-width: 767px) {
-	#head { min-height:420px;  }
+	#head { min-height:600px;  }
 	#head .lead { font-size: 34px; padding-top:160px;}
 }
-/**/
+/*@media 420px*/
 
 
 /* Autohide navbar */
@@ -41,6 +41,9 @@ label { color: #777; }
 .text-muted { color:#888; }
 .breadcrumb { background:none; padding:0; margin:30px 0 0px 0; }
 ul.list-spaces li{ margin-bottom:10px; }
+im1 {
+   background: url(assets/images/home.png) no-repeat; /* Фоновый рисунок для замены текста */
+    padding-top: 54px;}
 
 /* Helpers */
 .container-full { margin: 0 auto; width: 100%; }
@@ -81,3 +84,48 @@ img.pull-left { margin-right: 10px; }
 
 	.widget-simplenav { margin-left:-5px; }		
 	.widget-simplenav a{ margin:0 5px; }		
+
+#wrapper {
+      width: 500px;
+      margin: 150px auto 0;
+    }
+    summary { cursor: pointer; }
+    .no-details details > * { display: none; }
+    .no-details details > summary:before { float: left; width: 20px; content: '► '; }
+    .no-details details.open > summary:before { content: '▼ '; }
+    .no-details details summary { display: block; }
+
+#toTop {
+ position:fixed;
+ z-index:9999;
+ bottom:10px;
+ right:10px;
+ background: #F4FFBF;
+ border: 1px solid #ccc;
+ padding: 5px;
+ cursor: pointer;
+ color: #666;
+ text-decoration: none;
+ width:100px;
+}
+
+#toTop {
+ position:fixed;
+ z-index:9999;
+ bottom:10px;
+ right:10px;
+background: url(../images/up.png) no-repeat;
+
+ width: 64px;
+ height: 64px;
+ border: none;
+ padding: 5px;
+ cursor: pointer;
+ color: transparent;
+ text-decoration: none; 
+}
+
+iframe {
+    width: 804px;
+    height: 504px;
+}
