@@ -83,56 +83,57 @@
 					<div class="col-xs-12">
 						      <div class="list">
                                     <ul >
-                                                <h4><a href="">Конституция</a></h4>
-                                                <h4><a href="">Раздел I.</a></h4>
+                                                <h4><a href="assets/text/constRus/main.html" target="CONTENT">Конституция</a></h4>
+                                                <h4>Раздел I.</h4>
                                         
                                                 <div>
-                            <a href="" onclick="parent.frames[´CONTENT´].document.location='.../assets/text/constRus/chapterOne.html'"><h5>Глава 1. Основы конституционного строя</h5></a>
+                                                    <a href="assets/text/constRus/chapterOne.html" target="CONTENT">
+                                                        <h5>Глава 1. Основы конституционного строя</h5></a>
                                                     
                                                             
                                                 </div>
                                                 
                                                 <div>
-                                                    <a href="" class="spoiler_links"><h5>Глава 2.Права и свободы человека и гражданина</h5></a>
+                                                    <a href="assets/text/constRus/chapterTwo.html" target="CONTENT"><h5>Глава 2.Права и свободы человека и гражданина</h5></a>
                                                     
                                                 </div>
                                                 
                                                 <div>
-                                                    <a href="" class="spoiler_links"><h5>Глава 3. Федеративное устройство</h5></a>
+                                                    <a href="assets/text/constRus/chapterThree.html" target="CONTENT"><h5>Глава 3. Федеративное устройство</h5></a>
                                                     
                                                 </div>
                                         
                                                 <div>
-                                                    <a href="" class="spoiler_links"><h5>Глава 4. Президент Российской Федерации</h5></a>
+                                                    <a href="assets/text/constRus/chapterFour.html" target="CONTENT"><h5>Глава 4. Президент Российской Федерации</h5></a>
                                                     
                                                 </div>
                                         
                                                 <div>
-                                                    <a href="" class="spoiler_links"><h5>Глава 5. Федеральное Собрание</h5></a>
+                                                    <a href="assets/text/constRus/chapterFive.html" target="CONTENT"><h5>Глава 5. Федеральное Собрание</h5></a>
                                                     
                                                 </div>
                                         
                                                 <div>
-                                                    <a href="" class="spoiler_links"><h5>Глава 6. Правительство Российской Федерации</h5></a>
+                                                    <a href="assets/text/constRus/chapterSix.html" target="CONTENT"><h5>Глава 6. Правительство Российской Федерации</h5></a>
                                                     
                                                 </div>
                                         
                                                 <div>
-                                                    <a href="" class="spoiler_links"><h5>Глава 7. Судебная власть и прокуратура</h5></a>
+                                                    <a href="assets/text/constRus/chapterSeven.html" target="CONTENT"><h5>Глава 7. Судебная власть и прокуратура</h5></a>
                                                     
                                                 </div>
                                         
                                                 <div>
-                                                    <a href="" class="spoiler_links"><h5>Глава 8. Местное самоуправление</h5></a>
+                                                    <a href="assets/text/constRus/chapterEight.html" target="CONTENT"><h5>Глава 8. Местное самоуправление</h5></a>
                                                     
                                                 </div>
                                         
                                                 <div>
-                                                    <a href="" class="spoiler_links"><h5>Глава 9. Конституционные поправки и пересмотр Конституции</h5></a>
+                                                    <a href="assets/text/constRus/chapterNine.html" target="CONTENT"><h5>Глава 9. Конституционные поправки и пересмотр Конституции</h5></a>
                                                     
                                                 </div>
                                         
-                                                <h4> <a href=«#II»> Раздел II. Заключительные и переходные положения</a></h4>
+                                                <h4> <a href="assets/text/constRus/parTwo.html" target="CONTENT"> Раздел II. Заключительные и переходные положения</a></h4>
                                         <a href="#" id="toTop"></a>
                                   </ul>
                             </div>
@@ -142,7 +143,7 @@
 
 			</aside>
                 <article class="col-md-8 maincontent">
-                    <iframe src="assets/text/texts.html" name="CONTENT"></iframe>
+                    <iframe src="assets/images/RussianConstitution_fon.png" name="CONTENT"></iframe>
 				
                 </article>
                 
@@ -156,66 +157,7 @@
 	<script src="assets/js/headroom.min.js"></script>
 	<script src="assets/js/jQuery.headroom.min.js"></script>
 	<script src="assets/js/template.js"></script>
-<!--    <script src="assets/js/jquery.details.js"></script>-->
-    <script type="text/javascript">
-            $(document).ready(function(){
-         $('.spoiler_links').click(function(){
-          $(this).parent().children('div.spoiler_body').toggle('normal');
-          return false;
-         });
-        });
-    </script>
-    <script>
-            $(function(){
-              $.fn.scrollToTop=function(){
-                $(this).hide().removeAttr("href");
-                if($(window).scrollTop()!="0"){
-                    $(this).fadeIn("slow")
-              }
-              var scrollDiv=$(this);
-              $(window).scroll(function(){
-                if($(window).scrollTop()=="0"){
-                $(scrollDiv).fadeOut("slow")
-                }else{
-                $(scrollDiv).fadeIn("slow")
-              }
-              });
-                $(this).click(function(){
-                  $("html, body").animate({scrollTop:0},"slow")
-                })
-              }
-            });
-            $(function() {$("#toTop").scrollToTop();});
-    </script>
-    <script type="text/javascript">
-        function createRequest ()
-            {
-	var request = null;
-	try
-	{
-		request = new XMLHttpRequest ();
-	}
-	catch (e)
-	{
-		try
-		{
-			request = new ActiveXObject ("Microsoft.XMLHTTP");
-		}
-		catch (e) {}
-	}
-	return request;
-}
+    <script src="assets/js/constitutionTat.js"></script>
 
-        function getFile (name)
-            {
-
-	var req = createRequest ();
-	req.open('GET', name, false);
-//	req.overrideMimeType('text/plain; charset=windows-1251');
-	req.send(null);
-	document.getElementById ('mytext').firstChild.data = req.responseText;
-
-}
-</script>
 </body>
 </html>
