@@ -10,8 +10,6 @@
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-
-
 	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
 	<link rel="stylesheet" href="assets/css/main.css">
 
@@ -31,14 +29,14 @@
 <!--					<li class="active"><a href="#">Домашняя страница</a></li>-->
 					 <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Мониторинг обновлений <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
+                       <!-- <ul class="dropdown-menu">
 							<li class="active"><a href="#">1</a></li>
 							<li><a href="#">2</a></li>
-						</ul>
+						</ul>-->
                     </li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Нормативные документы <b class="caret"></b></a>
-						<ul class="dropdown-menu">
+						<a href="regulations.html" class="dropdown-toggle" data-toggle="dropdown">Нормативные документы <b class="caret"></b></a>
+						<!--<ul class="dropdown-menu">
 							<li class="active"><a href="constitutionRus.html">Конституция РФ</a></li>
 							<li ><a href="#">Констутиция РТ</a></li>
                             <li ><a href="#">Указы президента РФ</a></li>
@@ -47,22 +45,22 @@
                             <li ><a href="#">Постановление правительства РФ</a></li>
                             <li ><a href="#">Постановление правительства РТ</a></li>
                             <li ><a href="#">Региональные документы</a></li>
-						</ul>
+						</ul>-->
 					</li>
 					<li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Статьи <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
+                        <!--<ul class="dropdown-menu">
 							<li class="active"><a href="sidebar-left.html">Статья 1</a></li>
 							<li><a href="sidebar-right.html">Статья 2</a></li>
                             <li><a href="sidebar-right.html">Статья 3</a></li>
                             <li><a href="sidebar-right.html">Статья 4</a></li>
                             <li><a href="sidebar-right.html">Статья 5</a></li>
-						</ul>
+						</ul>-->
                     </li>
                     <li><a href="#">Форум</a></li>
                     <li><a href="#">Правовые новости</a></li>
-                    <li><a href="contact.html" >Обратная связь</a></li>
-					<li><a class="btn" href="signin.html">Вход/Регистрация</a></li>
+                    <li><a href="#contact" >Обратная связь</a></li>
+					<li><a class="btn" href="#contact">Вход/Регистрация</a></li>
 				</ul>
 			</div>
 		</div>
@@ -77,7 +75,79 @@
 		</div>
 	</header>
 
-	<!--<footer id="footer" class="top-space">
+     <section id="contact">
+        <div class="container">
+            <div class="box last">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1>Обратная связь</h1>
+                        <p></p>
+                        <div class="status alert alert-success" style="display: none"></div>
+                        <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php" role="form">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" required="required" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" required="required" placeholder="Email address">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-danger btn-lg">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!--/.col-sm-6-->
+                    <div class="col-sm-6">
+                        
+					<!--<div class="panel panel-default">
+						<div class="panel-body">-->
+							<h3 class="thin text-center">Вход в систему</h3>
+							<p class="text-center text-muted">Если вас нет в системе, <a href="signup.html">Зарегистрируйтесь</a>. </p>
+							<hr>
+							
+							<form>
+								<div class="top-margin">
+									<label>Имя пользователя/Email <span class="text-danger">*</span></label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="top-margin">
+									<label>Пароль <span class="text-danger">*</span></label>
+									<input type="password" class="form-control">
+								</div>
+
+								<hr>
+
+								<div class="row">
+									<div class="col-lg-8">
+										<b><a href="">Забыли пароль?</a></b>
+									</div>
+									<div class="col-lg-4 text-right">
+										<button class="btn btn-action" type="submit">Вход</button>
+									</div>
+								</div>
+							</form>
+						<!--</div>
+					
+
+				</div>-->
+                    </div><!--/.col-sm-6-->
+                </div><!--/.row-->
+            </div><!--/.box-->
+        </div><!--/.container-->
+         
+    </section><!--/#contact-->
+	<footer id="footer" class="top-space">
         
         <div class="footer1">
             
@@ -95,7 +165,7 @@
 
 			</div>
 		</div>
-    </footer>-->
+    </footer>
 
 
 
